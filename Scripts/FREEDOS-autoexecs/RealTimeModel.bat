@@ -1,6 +1,6 @@
 doslfn
 FOR %f in (D:\*.DAT) DO DEL %f
 FOR %f in (D:\*.mldatx) DO DEL %f
-copy C:\*.mldatx D: /Y /V
-copy C:\calib.bin D: /Y /V
+COPY C:\*.mldatx D: /Y /V
+IF EXIST C:\calib.bin COPY C:\calib.bin D: \Y \V
 xpcboot slrtkrnl.rtb
